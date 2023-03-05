@@ -40,11 +40,11 @@ Preencheu os pré-requisitos? Então vamos lá!
 
 ## ArgoCD
 
-O ArgoCD é uma poderoso ferramenta quando você pensa em GitOps ou Continous Delivery. O ArgoCD é um projeto open source, criado pela [Argo](https://argoproj.github.io/argo/), que tem como objetivo facilitar a implantação e gerenciamento de aplicações em Kubernetes.
+O ArgoCD é uma poderosa ferramenta quando você pensa em GitOps ou Continous Delivery. O ArgoCD é um projeto open source, criado pela [Argo](https://argoproj.github.io/argo/), que tem como objetivo facilitar a implantação e gerenciamento de aplicações em Kubernetes.
 
 O ArgoCD foi escrito em Go e utiliza o [Kubernetes Operator Pattern](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) para gerenciar os recursos do Kubernetes.
 
-Dito isso, fica claro que quando você instala o ArgoCD, você está instalando um operador do Kubernetes, que está extendendo o Kubernetes, adicionando novos `Custom Resources` e novos `Controllers` para gerenciar esses `Custom Resources`.
+Dito isso, fica claro que quando você instala o ArgoCD, você está instalando um operador do Kubernetes, que está estendendo o Kubernetes, adicionando novos `Custom Resources` e novos `Controllers` para gerenciar esses `Custom Resources`.
 
 Vamos ver isso com mais detalhes mais pra frente, mas por agora saiba que o ArgoCD vai mudar a forma como você pensa e trabalha com Kubernetes.
 
@@ -52,11 +52,11 @@ Talvez esse seja somente o seu primeiro passo para o mundo do GitOps e do Contin
 
 Você e sua equipe terá que se adaptar e criar maturidade para trabalhar com entregas contínuas, pois entregar é a tarefa mais fácil, o difícil é entregar com qualidade e com segurança de que não vai quebrar nada, que foi testado e que não vai afetar o negócio.
 
-Um forte característica do ArgoCD é a sua separação de responsabilidades quando estamos falando de CI/CD. Ele não se preocupa em ser um solução completa para a sua esteira de CI/CD, ele se preocupa em ser uma ferramenta que vai gerenciar as entregas contínuas no Kubernetes, ele se preocupa com a parte CD, e não com a parte CI.
+Uma forte característica do ArgoCD é a sua separação de responsabilidades quando estamos falando de CI/CD. Ele não se preocupa em ser uma solução completa para a sua esteira de CI/CD, ele se preocupa em ser uma ferramenta que vai gerenciar as entregas contínuas no Kubernetes, ele se preocupa com a parte CD, e não com a parte CI.
 
-Acho que essa é uma boa apresentação do ArgoCD, e nem vou vou precisar falar que ele é peça fundamental nas melhores engenharías de software do mundo.
+Acho que essa é uma boa apresentação do ArgoCD, e nem vou precisar falar que ele é peça fundamental nas melhores engenharias de software do mundo.
 
-Está preparado para mais essa viajem com o objetivo de descomplicar mais um assunto, o ArgoCD?
+Está preparado para mais essa viagem com o objetivo de descomplicar mais um assunto, o ArgoCD?
 
 #VAIIII
 
@@ -67,9 +67,9 @@ Esse livro não tem como objetivo descomplicar o GitOps. Nesse livro o nosso obj
 
 O GitOps é um conceito que foi criado pela [Weaveworks](https://www.weave.works/), e que tem como objetivo facilitar a entrega de aplicações no Kubernetes, utilizando o Git como fonte de verdade. O Git é a fonte de verdade, e o Git é o único lugar onde você vai encontrar a verdade sobre o estado da sua aplicação.
 
-Se lá é a fonte da verdade, vale a pena falar que quando estamos falando de GitOps, estamos falando sobre modo declarativo de gerenciar as aplicações no Kubernetes. Quando falamos em declarativo, estamos falando que o estado que das suas aplicação no Kubernetes, é o mesmo que está no Git, que é o mesmo que você deseja que esteja no Kubernetes.
+Se lá é a fonte da verdade, vale a pena falar que quando estamos falando de GitOps, estamos falando sobre modo declarativo de gerenciar as aplicações no Kubernetes. Quando falamos em declarativo, estamos falando que o estado que das suas aplicações no Kubernetes, é o mesmo que está no Git, que é o mesmo que você deseja que esteja no Kubernetes.
 
-Confuso? Calma, eu te explico.
+Confuso? Calma, eu vou te explicar.
 
 Vamos imaginar que você tenha o seguinte arquivo no Git:
 
@@ -204,7 +204,7 @@ Acredito que agora você tenha entendido um conceito muito importante do Kuberne
 
 Se é importante para o GitOps, é importante para o ArgoCD, e é por isso que o ArgoCD trabalha com o conceito de **estado desejado**.
 
-Eu não vou entrar em muito detalhes aqui sobre o que é o GitOps, pois teremos um repo só para isso. Mas basicamente o GitOps é uma metodologia de gerenciamento de configurações, onde o Git é a única fonte de verdade, e o Git é o único responsável por declarar o estado desejado da aplicação.
+Eu não vou entrar em muitos detalhes aqui sobre o que é o GitOps, pois teremos um repo só para isso. Mas basicamente o GitOps é uma metodologia de gerenciamento de configurações, onde o Git é a única fonte de verdade, e o Git é o único responsável por declarar o estado desejado da aplicação.
 
 &nbsp;
 
@@ -224,7 +224,7 @@ Aqui precisamos dividir essa instalação em duas partes, a instalação do Argo
 
 Ele possui ainda uma interface gráfica, que é o ArgoCD UI, mas não iremos abordar por enquanto, eu quero que a gente fique antes muito confortável com o ArgoCD CLI, que é o que iremos utilizar no nosso dia a dia.
 
-No começo ainda vamos utilizar somente o CLI, mas muito em breve vamos utilizar manifestos para definir as nossa aplicações dentro do ArgoCD.
+No começo ainda vamos utilizar somente o CLI, mas muito em breve vamos utilizar manifestos para definir as nossas aplicações dentro do ArgoCD.
 
 &nbsp;
 
@@ -636,7 +636,7 @@ kind: ConfigMap # tipo de recurso, no caso, um ConfigMap
 metadata: # metadados do recurso
   name: nginx-config # nome do recurso
 data: # dados do recurso
-  nginx.conf: | # inicio da definição do arquivo de configuração do Nginx
+  nginx.conf: | # início da definição do arquivo de configuração do Nginx
     server {
       listen 80;
       location / {
