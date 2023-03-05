@@ -1,0 +1,48 @@
+poderoso ferramenta
+poderosa ferramenta
+
+
+que está extendendo o Kubernetes, 
+que está estendendo o Kubernetes, 
+
+
+Um forte característica do ArgoCD é a sua 
+Uma forte característica do ArgoCD é a sua 
+
+
+Ele não se preocupa em ser um solução completa 
+Ele não se preocupa em ser uma solução completa 
+
+
+Acho que essa é uma boa apresentação do ArgoCD, e nem vou vou precisar falar que e
+Acho que essa é uma boa apresentação do ArgoCD, e nem vou precisar falar que e
+
+
+ArgoCD, e nem vou precisar falar que ele é peça fundamental nas melhores engenharías 
+ArgoCD, e nem vou precisar falar que ele é peça fundamental nas melhores engenharias 
+
+
+Está preparado para mais essa viajem 
+Está preparado para mais essa viagem 
+
+
+Quando falamos em declarativo, estamos falando que o estado que das suas aplicação 
+Quando falamos em declarativo, estamos falando que o estado que das suas aplicações 
+
+
+Confuso? Calma, eu te explico.
+Confuso? Calma, eu vou te explicar.
+
+
+Eu não vou entrar em muito detalhes aqui sobre o que é o GitOps
+Eu não vou entrar em muitos detalhes aqui sobre o que é o GitOps
+
+
+CLI, mas muito em breve vamos utilizar manifestos para definir as nossa aplicações 
+CLI, mas muito em breve vamos utilizar manifestos para definir as nossas aplicações 
+
+
+nginx.conf: | # inicio da definição do arquivo de configuração do Nginx
+nginx.conf: | # início da definição do arquivo de configuração do Nginx
+
+
